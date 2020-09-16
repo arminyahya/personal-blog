@@ -8,8 +8,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-
-export default function Post({ content, frontmatter }) {
+const Post = ({ content, frontmatter }) => {
   const CodeBlock = ({ language, value }) => {
     return <SyntaxHighlighter language={language}>{value}</SyntaxHighlighter>;
   };
@@ -36,7 +35,6 @@ export default function Post({ content, frontmatter }) {
         {`
           article {
             color: inherit;
-            font-family: "Josefin Sans", sans-serif;
           }
           h1 {
             font-size: 32px;
@@ -59,7 +57,9 @@ export default function Post({ content, frontmatter }) {
       </style>
     </Layout>
   );
-}
+};
+
+export default Post;
 
 export async function getStaticPaths() {
   const paths = getAllPostIds();

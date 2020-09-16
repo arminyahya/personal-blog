@@ -21,7 +21,6 @@ const Main = ({ children, home }) => {
           -webkit-box-shadow: 0px 0px 45px -25px rgba(0, 0, 0, 0.75);
           -moz-box-shadow: 0px 0px 45px -25px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 0px 45px -25px rgba(0, 0, 0, 0.75);
-          font-family: "Recursive", sans-serif;
           margin-bottom: 100px;
         }
         .blog-section-inner {

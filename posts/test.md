@@ -1,10 +1,10 @@
 ---
-title: " Generation v.s. Server-side Rendering"
+title: "Code block testing"
 date: "2020-04-16"
 catagory: "react"
 ---
 
-code block
+Trying out code block.
 
 ```jsx
 import React from "react";

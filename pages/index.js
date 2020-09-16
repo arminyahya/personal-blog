@@ -5,11 +5,11 @@ import Link from "next/link";
 import Date from "../components/date";
 import Main from "../components/Main";
 
-export default function Home({ allPostsData }) {
+const Home = ({ allPostsData }) => {
   return (
     <Layout home>
       <Head>
-        <title>Arshia Faraji</title>
+        <title>Arshia Faraji | Front end developer</title>
       </Head>
       <section className="about-section">
         <p className="about">
@@ -48,7 +48,6 @@ export default function Home({ allPostsData }) {
         }
         .about {
           font-size: 24px;
-          font-family: "IBM Plex Mono", monospace;
           text-align: justify;
         }
         h2 {
@@ -86,7 +85,9 @@ export default function Home({ allPostsData }) {
       `}</style>
     </Layout>
   );
-}
+};
+
+export default Home;
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
